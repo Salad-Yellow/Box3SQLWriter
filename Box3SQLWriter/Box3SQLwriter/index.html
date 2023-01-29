@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box3SQLwriter-Salad</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.css" />
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.css.map" />
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.min.css.map" />
+    <script src="../mdui 0.1.0/js/mdui.esm.js"></script>
+    <script src="../mdui 0.1.0/js/mdui.esm.js.map"></script>
+    <script src="../mdui 0.1.0/js/mdui.js"></script>
+    <script src="../mdui 0.1.0/js/mdui.js.map"></script>
+    <script src="../mdui 0.1.0/js/mdui.min.js"></script>
+    <script src="../mdui 0.1.0/js/mdui.min.js.map"></script>
+    <script src="./script.js"></script>
+    <noscript>Your browser version is too old, download the latest Edge or Chrome to use.</noscript>
+</head>
+
+<body class="mdui-theme-primary-indigo">
+    <div class="mdui-toolbar mdui-color-theme">
+        <span class="mdui-typo-title">Box3SQLwriter-Salad</span>
+        <script></script>
+        <div class="mdui-toolbar-spacer"></div>
+        <a class="mdui-icon material-icons"
+            href="javascript:mdui.alert('这是改进版的sql（作者承认有部分抄了可乐的sqlmaker......但是问题不大：）很好用哒）')"><i
+                class="mdui-icon material-icons">more</i></a>
+        <a class="mdui-icon material-icons"
+            href="javascript:location.reload();"><i
+                class="mdui-icon material-icons">&#xe5d5;</i></a>
+    </div>
+    <div>
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">&nbsp;tableName</label>
+            <input class="mdui-textfield-input tn" type="tn" />
+        </div>
+
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">&nbsp;value1</label>
+            <input class="mdui-textfield-input v1" type="v1" />
+        </div>
+
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">&nbsp;value2</label>
+            <input class="mdui-textfield-input v2" type="v2" />
+        </div>
+        <br><br><br><br><br><br>
+        <center><button style="border-radius: 100px;height: 70px;width: 150px" class="mdui-btn mdui-btn-raised mdui-color-red mdui-ripple" onclick="submit();">提交</button></center>
+        <br><br><br><br>
+        <div class="mdui-container center">
+            <button class="mdui-btn mdui-color-red mdui-ripple mdui-ripple-green" mdui-dialog="{target: '#exampleNoTitle'}"><i class="mdui-icon material-icons">&#xe5d3;</i></button>
+        
+            <div class="mdui-dialog" id="exampleNoTitle">
+              <div class="mdui-dialog-content">目前为止做了createTable() saveData() dropTable() loadData() removePlayersRecord() insertRecord() 以及玩家进入地图和离开地图的配置函数事件块</div>
+              <div class="mdui-dialog-actions">
+                <button class="mdui-btn mdui-ripple" mdui-dialog-close>cancel</button>
+                <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>ok</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box3SQLwriter-copyPage</title>
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.css" />
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.css.map" />
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../mdui 0.1.0/css/mdui.min.css.map" />
+    <link rel="stylesheet" type="text/css" href="./copystyle.css" />
+    <script src="../mdui 0.1.0/js/mdui.esm.js"></script>
+    <script src="../mdui 0.1.0/js/mdui.esm.js.map"></script>
+    <script src="../mdui 0.1.0/js/mdui.js"></script>
+    <script src="../mdui 0.1.0/js/mdui.js.map"></script>
+    <script src="../mdui 0.1.0/js/mdui.min.js"></script>
+    <script src="../mdui 0.1.0/js/mdui.min.js.map"></script>
+    <script src="./copyscript.js"></script>
+
+    <noscript>Your browser version is too old, download the latest Edge or Chrome to use.</noscript>
+</head>
+
+<body class="mdui-theme-primary-indigo">
+    <div class="mdui-toolbar mdui-color-theme">
+        <span class="mdui-typo-title">Box3SQLwriter-Salad</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <a class="mdui-icon material-icons"
+            href="javascript:mdui.alert('这是改进版的sql（作者承认有部分抄了可乐的sqlmaker......但是问题不大：）很好用哒）')"><i
+                class="mdui-icon material-icons">more</i></a>
+        <a class="mdui-icon material-icons" href="javascript:location.reload();"><i
+                class="mdui-icon material-icons">&#xe5d5;</i></a>
+    </div>
+
+    <div class="mdui-table-fluid">
+        <table class="mdui-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>key</th>
+                    <th>value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>tableName</td>
+                    <td id="tn-app"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>value1</td>
+                    <td id="v1n-app"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>value2</td>
+                    <td id="v2n-app"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>value1 type</td>
+                    <td id="v1nt-app"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>value2 type</td>
+                    <td id="v2nt-app"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>getValue();</script>
+    <br><br><br><br><br><br><br><br>
+    <center><button style="border-radius: 100px;height: 70px;width: 150px"
+            class="mdui-btn mdui-btn-raised mdui-color-red mdui-ripple" mdui-dialog="{target: '#codetab'}"
+            onclick="dotext();">生成代码</button></center>
+
+    <div class="mdui-dialog" id="codetab">
+        <div class="mdui-tab mdui-tab-full-width" id="tab">
+            <a href="#codetab" class="mdui-ripple">code</a>
+        </div>
+        <div class="mdui-p-a-2">
+            <p id="codetext-app"></p>
+        </div>
+    </div>
+</body>
+
+</html>
